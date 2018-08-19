@@ -587,13 +587,16 @@ button:hover, button:active, button:focus{
     -webkit-column-width: 33%;
     -moz-column-width: 33%;
     column-width: 33%; }
-/* .gallery .pics {
-    -webkit-transition: all 350ms ease;
-    transition: all 350ms ease; }
-.gallery .animation {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1); } */
+.pics img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.pics:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
 
 @media (max-width: 450px) {
     .gallery {
