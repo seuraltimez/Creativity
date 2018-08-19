@@ -248,7 +248,7 @@ button:hover, button:active, button:focus{
 }
 .caption{
 	font-size: 28px;
-	margin-top: 50px;
+	margin-top: 110px;
 	padding-left: 120px;
 }
 .square-1-team{
@@ -291,9 +291,11 @@ button:hover, button:active, button:focus{
 	margin-top: 10%;
 }
 .square-1-team a{
-	padding-left: 30px;
+	display: block;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	margin-right: 265px;
 	content: '';
-  display: block;
 }
 .square-1-team i {
 	color: #000;
@@ -301,7 +303,6 @@ button:hover, button:active, button:focus{
 }
 .square-1-team i:hover {
     color: #f78b8b;
-    transform: rotateY(360deg);
 }
 /* Конец TEAM */
 section {
