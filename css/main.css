@@ -372,11 +372,6 @@ section {
 	margin: 0 auto;	
 	bottom: 50px;
 }
-.square-1-testimonials p{
-	margin: 20px;
-	font-family: 'Montserrat', sans-serif;
-	color: #000;
-}
 .text-price h2{
 	color: #000;
 	font-size: 72px;
@@ -474,6 +469,8 @@ button:hover, button:active, button:focus{
 }
 /* ТУТ ОТЗЫВЫ */
 .content-testimonials{
+	background-color: #fff;
+	border: 5px solid #f78b8b;
 	outline: none;
 }
 .content-testimonials h2{
@@ -485,15 +482,11 @@ button:hover, button:active, button:focus{
 	margin-left: 4%;
 	margin-bottom: 4%
 }
-.square-1-testimonials{
-	background-color: #fff;
-	border: 5px solid #f78b8b;
-	width: 800px;
-	height: auto;
-	margin: 0 auto;
-}
 .content-testimonials p{
+	color: #000;
 	margin: 4%;
+	font-family: 'Montserrat', sans-serif;
+	color: #000;
 }
 /* КОНЕЦ */
 .text-faq h2{
