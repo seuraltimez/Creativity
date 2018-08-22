@@ -1,3 +1,4 @@
+ /*Форма Связаться снами*/
  $(".mat-input").focus(function(){
  $(this).parent().addClass("is-active is-completed");
 });
@@ -7,11 +8,13 @@ $(".mat-input").focusout(function(){
     $(this).parent().removeClass("is-completed");
   $(this).parent().removeClass("is-active");
 })
-
+/*---------*/
+/*Слайдер bxSlider*/
 $(document).ready(function(){
   $('.slider').bxSlider();
 });
-
+/*---------*/
+/*Скрол до якоря*/
 $(document).ready(function(){
 $("a[href*=#]").on("click", function(e){
     var anchor = $(this);
@@ -22,16 +25,16 @@ $("a[href*=#]").on("click", function(e){
     return false;
 });
 });
-
-
+/*---------*/
+/*Липкая шапка*/
 var header = new Headhesive('header');	
 $('.navbar-nav a').on('click', function() {
     if ($('.navbar-toggler').css('display') != 'none') {
     $(".navbar-toggler").trigger("click");
 }
 });
-
-
+/*---------*/
+/*Счётчик в Price*/
 $(function() {
 var num = $(".number");
 num.each(function(indx, el) {
@@ -65,7 +68,22 @@ $(window).scroll(function() {
     })
 })
 });
-
+/*---------*/
+/*Переключатели в Portfolio*/
+ $(function() {
+  var selectedClass = "";
+  $(".filter").click(function(){
+      selectedClass = $(this).attr("data-rel");
+      $("#gallery").fadeTo(100, 0.1);
+      $("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+      setTimeout(function() {
+          $("."+selectedClass).fadeIn().addClass('animation');
+          $("#gallery").fadeTo(300, 1);
+      }, 300);
+  });
+});
+/*---------*/
+/*Увелечение изображения в Portfolio*/
 ;( function( $ ) {
 
  $( '.lightzoom' ).lightzoom( {
@@ -78,3 +96,4 @@ $(window).scroll(function() {
  } );
 
 } )( jQuery );
+/*---------*/

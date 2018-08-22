@@ -187,7 +187,7 @@
   position: absolute;
   z-index: 3;
   display: block;
-  right: 79%;
+  right: 86%;
   top: 39%;
   color: #000;
   transform: translateY(-50%);
@@ -198,13 +198,39 @@
     position: absolute;
     z-index: 3;
     display: block;
-    left: 86%;
+    left: 87%;
     top: 40%;
     color: #000;
     transform: translateY(-50%);
     padding: 180px 93px;
     margin-left: -2px;
 }
+/* Контейнер для точек */
+
+.slider-container .slider-dot-wrapper {
+  position: absolute;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Точка */
+
+.slider-container .slider-dot-wrapper .slider-dot {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #f46464;
+  margin: 10px;
+}
+
+.slider-container .slider-dot-wrapper .slider-dot:hover {
+  border: 2px solid #f46464;
+  cursor: pointer;
+}
+
+
+/*  */
 .menu-left{width:84%;display:inline-block;float:left;}
 .menu-left h2{font-size:20px;color:#ff7624;font-weight:400;}
 .menu-left p{font-size:15px;color:#424c5f;line-height:1.6em;}
