@@ -5,9 +5,6 @@ body{
 	margin: 0;
 	padding: 0;
 }
-header{
-	margin-bottom: 100px;
-}
 img {
   display: inline-block;
   height: auto;
@@ -17,7 +14,10 @@ p{
 	white-space: pre-line;
 }
 .header {
-    background-color: rgba(255, 255, 255, 0);
+	background-color: rgba(255, 255, 255, 0);
+}
+.navbar-toggler{
+	outline: none !important;
 }
 .intro{
 	color: #fff;
@@ -54,47 +54,39 @@ p{
 	font-size: 15px;
 	font-weight: bold;
 }
-.navbar-nav a:after {
-    display: block;
-    content: "";
-    height: 2px;
-    width: 0%;
-    background-color: #000;
-    transition: width .3s ease-in-out;
-}
-.navbar-nav a:hover:after,
-.navbar-nav a:focus:after {
-    width: 100%;
-}
 .btn-1{
 	color: #f78b8b;
-	width: 250px;
-	height: 60px;
+	width: 255px;
+	height: 56px;
 	font-size: 20px;
-	border: 5px solid #f78b8b;
+	border: 4px solid #f78b8b;
 	transition: all 0.3s ease;
 	margin-left: 25%;
+
 }
 .btn-1 button{
+	font-size: 20px;
+ font-weight: bold;
 	transition: all 0.3s ease;
 	border: none;
 	background-color: transparent;
-	border: 5px solid #f78b8b;
-	width: 250px;
-	height: 60px;
+	border: 4px solid #f78b8b;
+	width: 255px;
+	height: 56px;
 	background-color: white;
 	color: #f78b8b;
 	z-index: 5;
 	position: relative;
-	top: -15px;
-	right: -7px;
+	top: -11px;
+	right: -3px;
 }
 button:hover, button:active, button:focus{
 	outline: none;
 }
 .btn-1:hover, .btn-1:hover > button, .btn-1:hover{
-    border: 5px solid #000;
-    color: #000;
+ border: 4px solid #000;
+ color: #000;
+ cursor: pointer;
 }
 
 .box-bg {
@@ -138,20 +130,20 @@ button:hover, button:active, button:focus{
 	margin-left: 100px;
 }
 .square-1{
-	width: 520px;
-	height: 332px;
+	width: 512px;
+	height: 323px;
 	border: 5px solid #f78b8b;
 }
 .square-2{
 	background: url('../img/about_us_photo.png');
 	background-repeat: no-repeat;
 	border: 5px solid #f78b8b;
-	width: 520px;
-	height: 332px;
+	width: 512px;
+	height: 323px;
 	z-index: 123;
 	position: relative;
-	bottom: 50px;
-	left: 50px;
+	bottom: 35px;
+	left: 30px;
 }
 
 .about-us a{
@@ -210,20 +202,12 @@ button:hover, button:active, button:focus{
 	font-size: 18px;
 	margin-left: 10%;
 }
-.col-xl-3 h2{
+#achievements h2{
 	font-size: 100px;
 }
-.col-xl-3 h3{
+#achievements h3{
 	font-size: 24px;
-}
-.col-xl-3 h3::bottom{
-	content: '';
-	width: 37px;
-	height: 3px;
-	display: inline-block;
-	background-color: #fff;
-	vertical-align: 20px;
-	margin-right: 10px;
+	color: #000;
 }
 
 /* НАЧАЛО TEAM */
@@ -247,14 +231,23 @@ button:hover, button:active, button:focus{
 	margin-left: 10%;
 }
 .caption{
-	font-size: 28px;
 	margin-top: 110px;
-	padding-left: 120px;
+	padding-left: 80px;
+}
+.caption h3{
+	font-size: 28px;
+	font-family: "Montserrat";
+	font-weight: bold;
+	color: #f78b8b;
+}
+.caption p{
+	font-size: 18px;
+	font-weight: bold;
 }
 .square-1-team{
 	width: 360px;
 	height: 390px;
-	border: 5px solid #f78b8b;
+	border: 3px solid #f78b8b;
 }
 .square-2-team {
 	background-image: url('../img/team_photo_1.png');
@@ -263,8 +256,8 @@ button:hover, button:active, button:focus{
 	height: 282px;
 	border: 5px solid #f78b8b;
 	position: relative;
-	bottom: 430px;
-	left: 116px;
+	bottom: 405px;
+	left: 117px;
 }
 .square-3-team {
 	background-image: url('../img/team_photo_2.png');
@@ -273,8 +266,8 @@ button:hover, button:active, button:focus{
 	height: 282px;
 	border: 5px solid #f78b8b;
 	position: relative;
-	bottom: 430px;
-	left: 116px;
+	bottom: 405px;
+	left: 117px;
 }
 .square-4-team {
 	background-image: url('../img/team_photo_3.png');
@@ -283,8 +276,8 @@ button:hover, button:active, button:focus{
 	height: 282px;
 	border: 5px solid #f78b8b;
 	position: relative;
-	bottom: 430px;
-	left: 116px;
+	bottom: 405px;
+	left: 117px;
 }
 .col-xl-4 {
 	margin: 0 auto;
@@ -330,90 +323,52 @@ section {
 	vertical-align: 20px;
 	margin-right: 10px;
 }
-.sl-slick-item {
-    outline: none;
-}
-.sl-slick .sl-slick-item img {
-  margin: 0 auto;
-}
-.sl-slick img {
-	border: 5px solid #f78b8b;
-}
-.sl-slick-item h2{
-	margin: 10px;
-	font-family: 'Montserrat', sans-serif;
-	color: #000;
-	font-size: 30px;
-}
-.sl-slick-item p{
-	margin: 10px;
-	font-family: 'Montserrat', sans-serif;
-	color: #000;
-	font-size: 20px;
-}
-.sl-slick a{
-	color: #f78b8b;
-	margin-right: 20px;
-	font-size: 20px;
-	float: right;
-}
-.sl-slick a:hover{
-	color: #000;
-	text-decoration: none;
-}
 .square-1-project{
-	width: 400px;
-	height: 150px;
+	width: 547px;
+	height: 145px;
 	position: relative;
+	left: -150px;
+	z-index: 207;
 }
 .square-1-project{
 	background-color: #fff;
-	border: 5px solid #f78b8b;
+	border: 3px solid #f78b8b;
 	margin: 0 auto;	
-	bottom: 50px;
+	bottom: 70px;
 }
-.text-price h2{
+.square-1-project p{
 	color: #000;
-	font-size: 72px;
-	font-family: 'Montserrat', sans-serif;
 }
-.text-price h2::before{
-	content: '';
-	width: 37px;
-	height: 3px;
-	display: inline-block;
-	background-color: #f78b8b;
-	vertical-align: 20px;
-	margin-right: 10px;
-}
+
 .btn-2{
 	color: #f78b8b;
-	width: 250px;
-	height: 60px;
+	width: 195px;
+	height: 56px;
 	font-size: 20px;
-	border: 5px solid #f78b8b;
+	border: 4px solid #f78b8b;
 	transition: all 0.3s ease;
 }
 .btn-2 button{
 	transition: all 0.3s ease;
 	border: none;
 	background-color: transparent;
-	border: 5px solid #f78b8b;
-	width: 250px;
-	height: 60px;
+	border: 4px solid #f78b8b;
+	width: 195px;
+	height: 56px;
 	background-color: white;
 	color: #f78b8b;
 	z-index: 5;
 	position: relative;
-	top: -15px;
-	right: -7px;
+	top: -11px;
+	right: -3px;
 }
 button:hover, button:active, button:focus{
 	outline: none;
 }
 .btn-2:hover, .btn-2:hover > button, .btn-2:hover{
-    border: 5px solid #000;
-    color: #000;
+ border: 4px solid #000;
+ color: #000;
+ cursor: pointer;
 }
 /* Конец hover для кнопки */
 .price-span{
@@ -431,13 +386,35 @@ button:hover, button:active, button:focus{
 }
 .card-body-price p > span::before{
 	content: '';
-	width: 10px;
-	height: 3px;
+	width: 15px;
+	height: 2px;
 	display: inline-block;
 	background-color: #f78b8b;
 	vertical-align: 5px;
 	margin-right: 10px;
 }
+.description-price {
+	padding-left: 35px;
+	font-style: italic;
+	color: #2f3a42;
+}
+.text-price h2{
+	color: #000;
+	font-size: 72px;
+	font-family: 'Montserrat', sans-serif;
+}
+.text-price h2::before{
+	content: '';
+	width: 37px;
+	height: 3px;
+	display: inline-block;
+	background-color: #f78b8b;
+	vertical-align: 20px;
+	margin-right: 10px;
+}
+
+
+
 #testimonials{
 	color: #fff;
 	height: 30%;
@@ -470,23 +447,31 @@ button:hover, button:active, button:focus{
 /* ТУТ ОТЗЫВЫ */
 .content-testimonials{
 	background-color: #fff;
-	border: 5px solid #f78b8b;
 	outline: none;
+	margin: 0 auto;
 }
 .content-testimonials h2{
 	color: #000;
-	margin-left: 4%;
+	margin-left: 12%;
 }
 .content-testimonials h5{
 	color: #000;
-	margin-left: 4%;
+	margin-left: 12%;
 	margin-bottom: 4%
 }
 .content-testimonials p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: italic;
 	color: #000;
-	margin: 4%;
+	padding: 20px 100px 20px 100px;
 	font-family: 'Montserrat', sans-serif;
-	color: #000;
+}
+.content-testimonials i{
+	position: relative;
+	bottom: 50px;
+	color: #f78b8b;
 }
 /* КОНЕЦ */
 .text-faq h2{
@@ -508,16 +493,19 @@ button:hover, button:active, button:focus{
 	font-size: 18px;
 	margin-left: 10%;
 }
-.card a{
-	color: #f78b8b;
+/* Аккордион */
+#accordion{
+	margin-top: 85px;
 }
-.card p {
-	top:5px;
-	right:20px;
-	font-size:20px;
-	color: #000;
+.card{
+	border:none !important;
 }
-.card-header a:before {
+.card-header{
+		background: rgba(255, 255, 255, 0.2)!important;
+		border-bottom: none !important;
+		border-top: 2px solid #fbcdcd;
+}
+.btn-link:before {
   content: '';
   position: absolute;
   display: block;
@@ -526,14 +514,13 @@ button:hover, button:active, button:focus{
   right: -15px;
   bottom: -15px;
 }
-.card-header a:hover {
-	text-decoration: none;
-	color: #000;
+.card a[aria-expanded="true"]{
+  color: #f78b8b!important;
 }
-
 .line {
-	border: 5px solid #f78b8b;
+	border: 6px solid #f78b8b;
 }
+/* ПОРТФОЛИО */
 .nav-por{
 	display: block;
 	list-style: none;
@@ -579,7 +566,8 @@ button:hover, button:active, button:focus{
     column-count: 3;
     -webkit-column-width: 33%;
     -moz-column-width: 33%;
-    column-width: 33%; }
+    column-width: 33%; 
+   }
 .pics img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -767,10 +755,10 @@ button:hover, button:active, button:focus{
 
 .btn-3{
 	color: #f78b8b;
-	width: 250px;
-	height: 60px;
+	width: 231px;
+	height: 56px;
 	font-size: 20px;
-	border: 5px solid #f78b8b;
+	border: 4px solid #f78b8b;
 	transition: all 0.3s ease;
 	margin-left: 40%;
 }
@@ -778,22 +766,23 @@ button:hover, button:active, button:focus{
 	transition: all 0.3s ease;
 	border: none;
 	background-color: transparent;
-	border: 5px solid #f78b8b;
-	width: 250px;
-	height: 60px;
+	border: 4px solid #f78b8b;
+	width: 231px;
+	height: 56px;
 	background-color: white;
 	color: #f78b8b;
 	z-index: 5;
 	position: relative;
-	top: -15px;
-	right: -7px;
+	top: -11px;
+	right: -3px;
 }
 button:hover, button:active, button:focus{
 	outline: none;
 }
 .btn-3:hover, .btn-3:hover > button, .btn-3:hover{
-    border: 5px solid #000;
-    color: #000;
+ border: 4px solid #000;
+ color: #000;
+ cursor: pointer;
 }
 
 /* FOOTER */
@@ -807,7 +796,10 @@ footer{
 footer h2{
 	margin-top: 140px;
 }
-
+.footer-form{
+position: relative;
+right: 100px;
+}
 .mat-label {
   display: block;
   font-size: 16px;
@@ -861,44 +853,42 @@ footer h2{
 /* Hover для кнопки */
 .btn-4{
 	background-color: #f78b8b;
-	width: 250px;
-	height: 60px;
+	width: 267px;
+	height: 56px;
 	font-size: 20px;
-	border: 5px solid #fff;
+	border: 4px solid #fff;
 	transition: all 0.3s ease;
-	margin-left: 25%;
 }
 .btn-4 button{
 	transition: all 0.3s ease;
 	background-color: transparent;
-	border: 5px solid #fff;
-	width: 250px;
-	height: 60px;
+	border: 4px solid #fff;
+	width: 267px;
+	height: 56px;
 	background-color: #f78b8b;
 	color: #fff;
 	z-index: 5;
 	position: relative;
-	top: -15px;
-	right: -7px;
+	top: -11px;
+	right: -3px;
 }
 button:hover, button:active, button:focus{
 	outline: none;
 }
 .btn-4:hover, .btn-4:hover > button, .btn-4:hover{
-    border: 5px solid #000;
-    color: #000;
+ border: 4px solid #000;
+ color: #000;
+ cursor: pointer;
 }
 /* Конец hover для кнопки */
-footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.contact {
+	margin-left: 20%;
 }
 .contact h5, h6 {
 	font-size: 30px;
 }
 .contact a{
-	color: #333;
+	color: #fff;
 	transition: 0.2s;
 }
 .contact a:hover { 
