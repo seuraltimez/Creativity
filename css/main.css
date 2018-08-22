@@ -133,9 +133,6 @@ button:hover, button:active, button:focus{
 	font-size: 60px;
 	font-family: 'Montserrat', sans-serif;
 }
-.col-about > a{
-	margin-left: 100px;
-}
 .square-1{
 	width: 512px;
 	height: 323px;
@@ -154,7 +151,8 @@ button:hover, button:active, button:focus{
 }
 .about-us a{
 	color: #f78b8b;
-	transition: .2s linear; 
+	margin-left: 25%;
+	transition: .2s linear;
 }
 .about-us a:hover {
 	text-decoration: none;
