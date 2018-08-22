@@ -84,8 +84,8 @@ button{
 	color: #f78b8b;
 	z-index: 5;
 	position: relative;
-	top: -11px;
-	right: -3px;
+	top: -10px;
+	right: -2px;
 }
 button:hover, button:active, button:focus{
 	outline: none;
@@ -380,8 +380,8 @@ button:hover, button:active, button:focus{
 	color: #f78b8b;
 	z-index: 5;
 	position: relative;
-	top: -11px;
-	right: -3px;
+	top: -10px;
+	right: -2px;
 }
 button:hover, button:active, button:focus{
 	outline: none;
@@ -800,8 +800,8 @@ only screen and (min-device-width: 480px) and (max-device-width: 991px) {
 	color: #f78b8b;
 	z-index: 5;
 	position: relative;
-	top: -11px;
-	right: -3px;
+	top: -10px;
+	right: -2px;
 }
 button:hover, button:active, button:focus{
 	outline: none;
@@ -896,8 +896,8 @@ right: 100px;
 	color: #fff;
 	z-index: 5;
 	position: relative;
-	top: -11px;
-	right: -3px;
+	top: -10px;
+	right: -2px;
 }
 button:hover, button:active, button:focus{
 	outline: none;
