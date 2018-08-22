@@ -127,6 +127,7 @@ button:hover, button:active, button:focus{
 .text-intro > h6{
 	color: #2f3a42;
 	font-size: 43px;
+	padding-left: 115px;
 	font-family: 'Montserrat', sans-serif;
 }
 .text-intro > h3{
