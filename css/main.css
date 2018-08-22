@@ -5,6 +5,10 @@ body{
 	margin: 0;
 	padding: 0;
 }
+section {
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
 img {
   display: inline-block;
   height: auto;
@@ -12,6 +16,9 @@ img {
 }
 p{
 	white-space: pre-line;
+}
+button{
+	outline: none !important;
 }
 .header {
 	background-color: rgba(255, 255, 255, 0);
@@ -292,16 +299,12 @@ button:hover, button:active, button:focus{
 }
 .square-1-team i {
 	color: #000;
-	transition: 1s;
+	transition: .4s;
 }
 .square-1-team i:hover {
     color: #f78b8b;
 }
 /* Конец TEAM */
-section {
-	padding-top: 8%;
-	padding-bottom: 8%;
-}
 #project{
 	color: #fff;
 	height: 30%;
@@ -760,7 +763,7 @@ button:hover, button:active, button:focus{
 	font-size: 20px;
 	border: 4px solid #f78b8b;
 	transition: all 0.3s ease;
-	margin-left: 40%;
+	margin: 0 auto;
 }
 .btn-3 button{
 	transition: all 0.3s ease;

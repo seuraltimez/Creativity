@@ -66,10 +66,6 @@ $(window).scroll(function() {
 })
 });
 
-$(function() {  
-    jQuery.scrollSpeed(100, 800);
-});
-
 ;( function( $ ) {
 
  $( '.lightzoom' ).lightzoom( {
