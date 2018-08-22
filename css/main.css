@@ -494,6 +494,12 @@ button:hover, button:active, button:focus{
 	bottom: 50px;
 	color: #f78b8b;
 }
+@media only screen and (min-width: 480px) and (max-width: 991px),
+only screen and (min-device-width: 480px) and (max-device-width: 991px) {
+  .content-testimonials i{
+  	bottom: 100px;
+  }
+}
 /* КОНЕЦ */
 .text-faq h2{
 	color: #000;
