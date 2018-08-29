@@ -245,7 +245,7 @@ button:hover, button:active, button:focus{
 .text-achievements h2{
 	color: #000;
 	font-size: 72px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
 }
 .text-achievements h2::before{
 	content: '';
@@ -259,11 +259,15 @@ button:hover, button:active, button:focus{
 .text-achievements p{
 	color: #2f3a42;
 	font-size: 18px;
+	padding-bottom: 60px;
 	margin-left: 10%;
 }
-#achievements h2{
-	font-size: 72px;
+.number{
+	font-size: 100px;
+	font-family: 'Montserrat';
+	font-weight: 900;
 }
+
 #achievements h3{
 	font-size: 24px;
 	color: #000;
