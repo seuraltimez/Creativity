@@ -80,6 +80,9 @@
 <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content about-modal-content">
+    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+      </button>
      	<div class="container">
      		<div class="row">
      			<div class="col-xl-12 text-about mb-5">
@@ -275,10 +278,32 @@
 					    	<span>1 GB Storage</span>
 					    </p>
 					   <div class="mt-5 btn-2">
-							<button class="btn-h"><b>BUY NOW</b></button>
+							<button class="btn-h" data-toggle="modal" data-target="#ModalBuy-1"><b>BUY NOW</b></button>
 							</div>
 					  </div>
 			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="ModalBuy-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header text-center">
+			        <h5>Modal title</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        ...
+			      </div>
+			      <div class="modal-footer">
+			        <div class="btn-buy">
+							<button><b>BUY NOW</b></button>
+							</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!--End Modal -->
 			<div class="col-xl-3 col-md-6 col-sm-6">
 					  <div class="card-body-price">
 					    <h2 class="card-title mt-5"><b>TEAM</b></h2>
