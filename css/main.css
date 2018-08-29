@@ -207,6 +207,7 @@ button:hover, button:active, button:focus{
 	left: 30px;
 }
 .about-us a{
+	outline: none !important;
 	color: #f78b8b;
 	margin-left: 25%;
 	transition: .2s linear;
@@ -1045,4 +1046,51 @@ button:hover, button:active, button:focus{
 }
 .headhesive--stick {
 	transform: translateY(0);
+}
+.about-modal-content{
+	padding: 20px;
+}
+.about-modal-content p{
+	font-size: 14px;
+}
+.square-3{
+	width: 100%;
+	height: 100%;
+	border: 2px solid #f46464;
+}
+.square-4{
+	background: url('../img/about_us_photo.png');
+	background-repeat: no-repeat;
+	border: 2px solid #f46464;
+	width: 100%;
+	height: 100%;
+	z-index: 123;
+	position: relative;
+	bottom: 20px;
+	left: 20px;
+}
+.about-modal-content h3{
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 30px;
+	color: #f46464;
+}
+.about-modal-content h4{
+	font-weight: bold;
+}
+.about-modal-content h5{
+	font-family: 'Helvetica';
+	text-transform: uppercase;
+	font-size: 24px;
+}
+.about-modal-content h6{
+	font-family: "Helvetica";
+	font-size: 18px;
+}
+.anycolor {
+	font-size: 36px;
+	font-family: "Montserrat";
+	color: #f46464;
+	font-weight: bold;
+	text-transform: uppercase;
 }
