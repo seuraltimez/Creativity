@@ -209,7 +209,7 @@ button:hover, button:active, button:focus{
 .about-us a{
 	outline: none !important;
 	color: #f78b8b;
-	margin-left: 25%;
+	margin-left: 20%;
 	transition: .2s linear;
 }
 .about-us a:hover {
@@ -1093,4 +1093,43 @@ button:hover, button:active, button:focus{
 	color: #f46464;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+.close{
+	position: relative;
+	right: -735px;
+    bottom: 20px;
+	width: 40px;
+	height: 40px;
+	color: #f46464!important;
+	font-size: 2.5rem !important;
+}
+.btn-buy{
+	color: #f78b8b;
+	width: 195px;
+	height: 56px;
+	font-size: 20px;
+	border: 4px solid #f78b8b;
+	transition: all 0.3s ease;
+}
+.btn-buy button{
+	transition: all 0.3s ease;
+	border: none;
+	background-color: transparent;
+	border: 4px solid #f78b8b;
+	width: 195px;
+	height: 56px;
+	background-color: white;
+	color: #f78b8b;
+	z-index: 5;
+	position: relative;
+	top: -10px;
+	right: -2px;
+}
+button:hover, button:active, button:focus{
+	outline: none;
+}
+.btn-buy:hover, .btn-buy:hover > button, .btn-buy:hover{
+ border: 4px solid #000;
+ color: #000;
+ cursor: pointer;
 }
