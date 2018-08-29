@@ -535,6 +535,9 @@ only screen and (min-device-width: 480px) and (max-device-width: 991px) {
   .content-testimonials i{
   	bottom: 100px;
   }
+  .fa-2x{
+  	font-size: 25px !important;
+  }
 }
 @media only screen and (min-width: 480px) and (max-width: 991px),
 only screen and (min-device-width: 480px) and (max-device-width: 991px) {
