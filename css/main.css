@@ -246,7 +246,7 @@ button:hover, button:active, button:focus{
 .text-achievements h2{
 	color: #000;
 	font-size: 72px;
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', sans-serif;
 }
 .text-achievements h2::before{
 	content: '';
@@ -265,7 +265,7 @@ button:hover, button:active, button:focus{
 }
 .number{
 	font-size: 100px;
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
 }
 
@@ -301,7 +301,7 @@ button:hover, button:active, button:focus{
 }
 .caption-1 h3{
 	font-size: 28px;
-	font-family: "Montserrat";
+	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	color: #f78b8b;
 }
@@ -317,7 +317,7 @@ button:hover, button:active, button:focus{
 }
 .caption-2 h3{
 	font-size: 28px;
-	font-family: "Montserrat";
+	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	color: #f78b8b;
 }
@@ -333,7 +333,7 @@ button:hover, button:active, button:focus{
 }
 .caption-3 h3{
 	font-size: 28px;
-	font-family: "Montserrat";
+	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	color: #f78b8b;
 }
@@ -530,9 +530,6 @@ button:hover, button:active, button:focus{
 	vertical-align: 20px;
 	margin-right: 10px;
 }
-
-
-
 #testimonials{
 	color: #fff;
 	height: 30%;
@@ -1070,7 +1067,7 @@ button:hover, button:active, button:focus{
 	left: 20px;
 }
 .about-modal-content h3{
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	font-size: 30px;
 	color: #f46464;
@@ -1089,7 +1086,7 @@ button:hover, button:active, button:focus{
 }
 .anycolor {
 	font-size: 36px;
-	font-family: "Montserrat";
+	font-family: 'Montserrat', sans-serif;
 	color: #f46464;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -1153,6 +1150,14 @@ button:hover, button:active, button:focus{
 .modal-footer {
 	border: 0 !important;
 }
+.modal-body h4{
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+}
+.modal-body p{
+	font-style: italic;
+}
+
 /* The radio */
 .radio {
     display: block;
@@ -1265,7 +1270,6 @@ button:hover, button:active, button:focus{
   border: none;
   outline: none;
 }
-
 .mat-div-buy-code:after, .mat-div-buy-code:before {
   content: "";
   position: absolute;
