@@ -1138,9 +1138,17 @@ button:hover, button:active, button:focus{
 .modal-header{
 	background-color: #f46464;
 }
-.modal-header > h5{
+.modal-header > span{
 	color: #fff;
-	margin-left: 40%;
+	margin-left: 25%;
+}
+.modal-header h5{
+	font-family: "Helvetica";
+	font-size: 18px;
+}
+.modal-header h3{
+	font-size: 24px;
+	font-family: "Helvetica";
 }
 .modal-footer {
 	border: 0 !important;
