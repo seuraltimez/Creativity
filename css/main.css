@@ -1104,6 +1104,7 @@ button:hover, button:active, button:focus{
 	font-size: 2.5rem !important;
 }
 .btn-buy{
+	margin:30px;
 	margin-right: 140px;
 	color: #f78b8b;
 	width: 190px;
@@ -1194,19 +1195,77 @@ button:hover, button:active, button:focus{
     border-radius: 50%;
     background:#cd5454;
 }
-/* .form-div {
+
+.mat-input-buy {
+  position: relative;
+  background: transparent;
+  width: 320px;
+  margin-left: 70px;
+  border: none;
+  outline: none;
+}
+
+.mat-div-buy {
   padding: 30px 0 0 0;
   position: relative;
 }
 
-.form-div:after, .form-div:before {
+.mat-div-buy:after, .mat-div-buy:before {
   content: "";
   position: absolute;
+  margin-left: 70px;
   display: block;
-  width: 100%;
+  width: 320px;
   height: 2px;
-  background-color: #e2e2e2; 
+  background-color: #c3c4c3; 
   bottom: 0;
   left: 0;
-  transition: all 0.5s;
-} */
+}
+.mat-div-buy-expiry {
+  padding: 30px 0 0 0;
+  position: relative;
+}
+.mat-input-buy-expiry {
+  position: relative;
+  background: transparent;
+  width: 125px;
+  margin-left: 70px;
+  border: none;
+  outline: none;
+}
+
+.mat-div-buy-expiry:after, .mat-div-buy-expiry:before {
+  content: "";
+  position: absolute;
+  margin-left: 70px;
+  display: block;
+  width: 130px;
+  height: 2px;
+  background-color: #c3c4c3;
+  bottom: 0;
+  left: 0;
+}
+.mat-div-buy-code {
+  padding: 30px 0 0 0;
+  position: relative;
+}
+.mat-input-buy-code {
+  position: relative;
+  background: transparent;
+  width: 100px;
+  margin-left: 45px;
+  border: none;
+  outline: none;
+}
+
+.mat-div-buy-code:after, .mat-div-buy-code:before {
+  content: "";
+  position: absolute;
+  margin-left: 40px;
+  display: block;
+  width: 117px;
+  height: 2px;
+  background-color: #c3c4c3; 
+  bottom: 0;
+  left: 0;
+}
