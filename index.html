@@ -286,8 +286,11 @@
 			<div class="modal fade" id="ModalBuy-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 			  <div class="modal-dialog modal-dialog-centered" role="document">
 			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h5>12$</h5>
+			      <div class="modal-header text-center">
+						<span>
+							<h5>Selected plan</h5>
+							<h3>COMPANY 12$/month</h3>
+						</span>
 			      </div>
 			      <div class="modal-body">
 			        <div class="container">
@@ -365,10 +368,85 @@
 					    	<span>1 GB Storage</span>
 					    </p>
 					   <div class="mt-5 btn-2">
-							<button class="btn-h"><b>BUY NOW</b></button>
+							<button class="btn-h" data-toggle="modal" data-target="#ModalBuy-2"><b>BUY NOW</b></button>
 							</div>
 					  </div>
 			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="ModalBuy-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header text-center">
+						<span>
+							<h5>Selected plan</h5>
+							<h3>COMPANY 24$/month</h3>
+						</span>
+			      </div>
+			      <div class="modal-body">
+			        <div class="container">
+			        	<div class="row">
+			        		<div class="col-xl-12 text-center mt-4">
+			        			<h4>Choose a payment method</h4>
+			        			<p>Click one of the options below</p>
+			        		</div>
+			        	</div>
+			        	<div class="row">
+			        		<div class="col-xl-6 col-xs-6 col-sm-6 col-md-6 mt-3">
+			        			<label class="radio"><img src="img/brands/mastercard.png" alt="">
+										  <input type="radio" checked="checked" name="is_company">
+										  <span class="checkround"></span>
+										</label>
+										<label class="radio"><img src="img/brands/visa.png" alt="">
+										  <input type="radio" checked="checked" name="is_company">
+										  <span class="checkround"></span>
+										</label>
+			        		</div>
+			        		<div class="col-xl-6 col-xs-6 col-sm-6 col-md-6 mt-3">
+			        			<label class="radio"><img src="img/brands/cirrus.png" alt="">
+										  <input type="radio" checked="checked" name="is_company">
+										  <span class="checkround"></span>
+										</label>
+										<label class="radio"><img src="img/brands/paypal.png" alt="">
+										  <input type="radio" checked="checked" name="is_company">
+										  <span class="checkround"></span>
+										</label>
+			        		</div>
+			        	</div>
+			        <div class="row">
+			        <div class="col-xl-12">
+			        	<div class="mat-div-buy">
+							    <label for="email" class="mat-label-buy"></label>
+							    <input type="email" class="mat-input-buy" id="email" placeholder="Your e-mail adress">
+							  </div>
+							    <div class="mat-div-buy">
+							    <label for="number" class="mat-label-buy"></label>
+							    <input type="number" class="mat-input-buy" id="namber" placeholder="Card Number">
+							  </div>
+							</div>
+							</div>
+								<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="mat-div-buy-expiry">
+			    						<input type="password" name="password" id="password" class="mat-input-buy-expiry" placeholder="Password">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="mat-div-buy-code">
+			    						<input type="password" name="password_confirmation" id="password_confirmation" class="mat-input-buy-code" placeholder="Security code">
+			    					</div>
+			    				</div>
+			    			</div>
+			      </div>
+			      </div>
+			      <div class="modal-footer">
+			        <div class="btn-buy">
+							<button><b>BUY NOW</b></button>
+							</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!--End Modal -->
 			<div class="col-xl-3 col-md-6 col-sm-6">
 					  <div class="card-body-price">
 					    <h2 class="card-title mt-5"><b>BUSINESS</b></h2>
@@ -380,10 +458,85 @@
 					    	<span>1 GB Storage</span>
 					    </p>
 					   <div class="mt-5 btn-2">
-							<button class="btn-h"><b>BUY NOW</b></button>
+							<button class="btn-h" data-toggle="modal" data-target="#ModalBuy-3"><b>BUY NOW</b></button>
 							</div>
 					  </div>
 			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="ModalBuy-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header text-center">
+						<span>
+							<h5>Selected plan</h5>
+							<h3>COMPANY 58$/month</h3>
+						</span>
+			      </div>
+			      <div class="modal-body">
+			        <div class="container">
+			        	<div class="row">
+			        		<div class="col-xl-12 text-center mt-4">
+			        			<h4>Choose a payment method</h4>
+			        			<p>Click one of the options below</p>
+			        		</div>
+			        	</div>
+			        	<div class="row">
+			        		<div class="col-xl-6 col-xs-6 col-sm-6 col-md-6 mt-3">
+			        			<label class="radio"><img src="img/brands/mastercard.png" alt="">
+										  <input type="radio" checked="checked" name="is_company">
+										  <span class="checkround"></span>
+										</label>
+										<label class="radio"><img src="img/brands/visa.png" alt="">
+										  <input type="radio" checked="checked" name="is_company">
+										  <span class="checkround"></span>
+										</label>
+			        		</div>
+			        		<div class="col-xl-6 col-xs-6 col-sm-6 col-md-6 mt-3">
+			        			<label class="radio"><img src="img/brands/cirrus.png" alt="">
+										  <input type="radio" checked="checked" name="is_company">
+										  <span class="checkround"></span>
+										</label>
+										<label class="radio"><img src="img/brands/paypal.png" alt="">
+										  <input type="radio" checked="checked" name="is_company">
+										  <span class="checkround"></span>
+										</label>
+			        		</div>
+			        	</div>
+			        <div class="row">
+			        <div class="col-xl-12">
+			        	<div class="mat-div-buy">
+							    <label for="email" class="mat-label-buy"></label>
+							    <input type="email" class="mat-input-buy" id="email" placeholder="Your e-mail adress">
+							  </div>
+							    <div class="mat-div-buy">
+							    <label for="number" class="mat-label-buy"></label>
+							    <input type="number" class="mat-input-buy" id="namber" placeholder="Card Number">
+							  </div>
+							</div>
+							</div>
+								<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="mat-div-buy-expiry">
+			    						<input type="password" name="password" id="password" class="mat-input-buy-expiry" placeholder="Password">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="mat-div-buy-code">
+			    						<input type="password" name="password_confirmation" id="password_confirmation" class="mat-input-buy-code" placeholder="Security code">
+			    					</div>
+			    				</div>
+			    			</div>
+			      </div>
+			      </div>
+			      <div class="modal-footer">
+			        <div class="btn-buy">
+							<button><b>BUY NOW</b></button>
+							</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!--End Modal -->
 			<div class="col-xl-3 col-md-6 col-sm-6">
 					  <div class="card-body-price">
 					    <h2 class="card-title mt-5"><b>COMPANY</b></h2>
@@ -395,9 +548,85 @@
 					    	<span>1 GB Storage</span>
 					    </p>
 					   <div class="mt-5 btn-2">
-							<button><b>BUY NOW</b></button>
+							<button class="btn-h" data-toggle="modal" data-target="#ModalBuy-4"><b>BUY NOW</b></button>
 							</div>
 					  </div>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="ModalBuy-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header text-center">
+						<span>
+							<h5>Selected plan</h5>
+							<h3>COMPANY 116$/month</h3>
+						</span>
+			      </div>
+			      <div class="modal-body">
+			        <div class="container">
+			        	<div class="row">
+			        		<div class="col-xl-12 text-center mt-4">
+			        			<h4>Choose a payment method</h4>
+			        			<p>Click one of the options below</p>
+			        		</div>
+			        	</div>
+			        	<div class="row">
+			        		<div class="col-xl-6 col-xs-6 col-sm-6 col-md-6 mt-3">
+			        			<label class="radio"><img src="img/brands/mastercard.png" alt="">
+										  <input type="radio" checked="checked" name="is_company">
+										  <span class="checkround"></span>
+										</label>
+										<label class="radio"><img src="img/brands/visa.png" alt="">
+										  <input type="radio" checked="checked" name="is_company">
+										  <span class="checkround"></span>
+										</label>
+			        		</div>
+			        		<div class="col-xl-6 col-xs-6 col-sm-6 col-md-6 mt-3">
+			        			<label class="radio"><img src="img/brands/cirrus.png" alt="">
+										  <input type="radio" checked="checked" name="is_company">
+										  <span class="checkround"></span>
+										</label>
+										<label class="radio"><img src="img/brands/paypal.png" alt="">
+										  <input type="radio" checked="checked" name="is_company">
+										  <span class="checkround"></span>
+										</label>
+			        		</div>
+			        	</div>
+			        <div class="row">
+			        <div class="col-xl-12">
+			        	<div class="mat-div-buy">
+							    <label for="email" class="mat-label-buy"></label>
+							    <input type="email" class="mat-input-buy" id="email" placeholder="Your e-mail adress">
+							  </div>
+							    <div class="mat-div-buy">
+							    <label for="number" class="mat-label-buy"></label>
+							    <input type="number" class="mat-input-buy" id="namber" placeholder="Card Number">
+							  </div>
+							</div>
+							</div>
+								<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="mat-div-buy-expiry">
+			    						<input type="password" name="password" id="password" class="mat-input-buy-expiry" placeholder="Password">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="mat-div-buy-code">
+			    						<input type="password" name="password_confirmation" id="password_confirmation" class="mat-input-buy-code" placeholder="Security code">
+			    					</div>
+			    				</div>
+			    			</div>
+			      </div>
+			      </div>
+			      <div class="modal-footer">
+			        <div class="btn-buy">
+							<button><b>BUY NOW</b></button>
+							</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!--End Modal -->
 			</div>
 		</div>
 </section>
