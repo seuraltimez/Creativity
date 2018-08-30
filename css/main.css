@@ -1139,8 +1139,8 @@ button:hover, button:active, button:focus{
 	background-color: #f46464;
 }
 .modal-header > span{
+	margin: 0 auto;
 	color: #fff;
-	margin-left: 25%;
 }
 .modal-header h5{
 	font-family: "Helvetica";
@@ -1260,7 +1260,7 @@ button:hover, button:active, button:focus{
 .mat-input-buy-code {
   position: relative;
   background: transparent;
-  width: 100px;
+  width: 130px;
   margin-left: 27px;
   border: none;
   outline: none;
