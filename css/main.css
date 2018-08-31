@@ -1324,4 +1324,5 @@ button:hover, button:active, button:focus{
 	width: 370px;
 	height: 450px;
 	background-color: #aaa;
+	z-index: 9999999;
 }
