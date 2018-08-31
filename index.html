@@ -132,6 +132,12 @@
 </div>
 <!-- end Modal -->
 </section>
+<div class="callback open">
+	<button><i class="fas fa-2x fa-phone-volume"></i></button>
+</div>
+<div id="box" class="options">
+	text text text text text text text text text text text text text text text text text text text text text text text text text text text text text
+</div>
 <section id="achievements">
 	<div class="container">
 		<div class="row">
@@ -825,7 +831,6 @@
 
 
 
-
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/lightzoom.js"></script>
 <script src="js/headhesive.min.js"></script>
@@ -837,5 +842,10 @@
 <script src="slick/slick.min.js"></script>
 <script src="js/jquery.bxslider.js"></script>
 <script src="js/3d-slider.js"></script>
+<script>
+$('.open').click(function() {
+    $('#box').toggle();
+});
+</script>
 </body>
 </html>
