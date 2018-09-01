@@ -1286,8 +1286,8 @@ button:hover, button:active, button:focus{
 	bottom: 10%;
 	left: 93%;
 	color: #f46464;
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 50px;
 	font-size: 20px;
 	border: 4px solid #f46464;
 	transition: all 0.3s ease;
@@ -1297,8 +1297,8 @@ button:hover, button:active, button:focus{
 	border: none;
 	background-color: transparent;
 	border: 4px solid #f46464;
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 50px;
 	background-color: white;
 	color: #f46464;
 	z-index: 5;
@@ -1319,10 +1319,111 @@ button:hover, button:active, button:focus{
 }
 .options {
 	position: fixed;
-	top: 25%;
+	top: 28%;
 	left: 60%;
 	width: 370px;
 	height: 450px;
-	background-color: #aaa;
+	border: none;
+	background-color: #fff;
 	z-index: 9999999;
+}
+.mat-input-box {
+  position: relative;
+  background: transparent;
+  width: 320px;
+  border: none;
+  outline: none;
+}
+
+.mat-div-box {
+  padding: 25px 0 0 0;
+  position: relative;
+}
+
+.mat-div-box:after, .mat-div-box:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 320px;
+  height: 2px;
+  background-color: #c3c4c3; 
+  bottom: 0;
+  left: 0;
+}
+.mat-div-box-date {
+  padding: 30px 0 0 0;
+  position: relative;
+}
+.mat-input-box-date {
+  position: relative;
+  background: transparent;
+  width: 165px;
+  border: none;
+  outline: none;
+}
+
+.mat-div-box-date:after, .mat-div-box-date:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 165px;
+  height: 2px;
+  background-color: #c3c4c3;
+  bottom: 0;
+  left: 0;
+}
+.mat-div-box-time {
+  padding: 52px 0 0 0;
+  position: relative;
+}
+.mat-input-box-time {
+  position: relative;
+  background: transparent;
+  width: 75px;
+  border: none;
+  outline: none;
+}
+.mat-div-box-time:after, .mat-div-box-time:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: #c3c4c3; 
+  bottom: 0;
+}
+.btn-box-1{
+	margin: 30px;
+	margin-right: 70px;
+	color: #f46464;
+	width: 190px;
+	height: 50px;
+	font-size: 20px;
+	border: 4px solid #f46464;
+	transition: all 0.3s ease;
+}
+.btn-box-1 button{
+	transition: all 0.3s ease;
+	border: none;
+	background-color: transparent;
+	border: 4px solid #f46464;
+	width: 190px;
+	height: 50px;
+	background-color: white;
+	color: #f46464;
+	z-index: 5;
+	position: relative;
+	top: -10px;
+	right: -2px;
+}
+button:hover, button:active, button:focus{
+	outline: none;
+}
+.btn-box-1:hover, .btn-box-1:hover > button, .btn-box-1:hover{
+ border: 4px solid #000;
+ color: #000;
+ cursor: pointer;
+}
+.fa-calendar-alt{
+	color: #f46464;
 }
