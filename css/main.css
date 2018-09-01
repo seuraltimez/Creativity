@@ -1321,8 +1321,6 @@ button:hover, button:active, button:focus{
 	position: fixed;
 	top: 28%;
 	left: 60%;
-	width: 370px;
-	height: 450px;
 	border: none;
 	background-color: #fff;
 	z-index: 9999999;
@@ -1382,6 +1380,7 @@ button:hover, button:active, button:focus{
   width: 75px;
   border: none;
   outline: none;
+  left: -15px;
 }
 .mat-div-box-time:after, .mat-div-box-time:before {
   content: "";
@@ -1391,10 +1390,11 @@ button:hover, button:active, button:focus{
   height: 2px;
   background-color: #c3c4c3; 
   bottom: 0;
+  left: -15px;
 }
 .btn-box-1{
 	margin: 30px;
-	margin-right: 70px;
+	margin-right: 85px;
 	color: #f46464;
 	width: 190px;
 	height: 50px;
