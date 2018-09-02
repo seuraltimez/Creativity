@@ -1286,8 +1286,8 @@ button:hover, button:active, button:focus{
 	bottom: 10%;
 	left: 93%;
 	color: #f46464;
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 	font-size: 20px;
 	border: 4px solid #f46464;
 	transition: all 0.3s ease;
@@ -1297,8 +1297,8 @@ button:hover, button:active, button:focus{
 	border: none;
 	background-color: transparent;
 	border: 4px solid #f46464;
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 	background-color: white;
 	color: #f46464;
 	z-index: 5;
@@ -1371,7 +1371,7 @@ button:hover, button:active, button:focus{
   left: 0;
 }
 .mat-div-box-time {
-  padding: 52px 0 0 0;
+  padding: 45px 0 0 0;
   position: relative;
 }
 .mat-input-box-time {
