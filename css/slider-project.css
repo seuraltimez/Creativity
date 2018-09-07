@@ -121,6 +121,14 @@
   left: -129px;
   border: 3px solid #f78b8b;
   opacity: .8;
+      filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
   transform: translateX(-25%) scale(0.8);
 }
 .slider-container .slider-content .slider-single.preactive .slider-single-download {
@@ -138,6 +146,14 @@
 .slider-container .slider-content .slider-single.proactive .slider-single-image {
   left: 129px;
   opacity: .8;
+      filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
   transform: translateX(25%) scale(0.8);
   border: 3px solid #f78b8b;
 }

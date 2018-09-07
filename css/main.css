@@ -999,7 +999,6 @@ right: 10%;
 }
 .btn-4 button{
 	transition: all 0.3s ease;
-	background-color: transparent;
 	border: 4px solid #fff;
 	width: 267px;
 	height: 56px;
@@ -1045,7 +1044,9 @@ button:hover, button:active, button:focus{
 	transform: translateY(0);
 }
 .about-modal-content{
-	padding: 20px;
+	padding: 10px;
+	height: 900px;
+    overflow: auto;
 }
 .about-modal-content p{
 	font-size: 14px;
@@ -1091,14 +1092,26 @@ button:hover, button:active, button:focus{
 	font-weight: bold;
 	text-transform: uppercase;
 }
-.close{
-	position: relative;
-	right: -735px;
-    bottom: 20px;
-	width: 40px;
-	height: 40px;
+.close-about{
 	color: #f46464!important;
-	font-size: 2.5rem !important;
+	font-size: 2.5rem!important;
+}
+.close-callback{
+	color: #fff!important;
+	font-size: 2.5rem!important;
+	position: relative;
+	bottom: 43px;
+	right: -30px;
+}
+.close-buy{
+	color: #fff!important;
+	font-size: 2.5rem!important;
+	position: relative;
+	bottom: 33px;
+	right: -20px;
+}
+.modal-content {
+	border: none!important;
 }
 .btn-buy{
 	margin:30px;
@@ -1132,18 +1145,37 @@ button:hover, button:active, button:focus{
  color: #000;
  cursor: pointer;
 }
-.modal-header{
+.modal-header-buy{
+	padding: 20px;
 	background-color: #f46464;
 }
-.modal-header > span{
+.modal-header-buy > span{
 	margin: 0 auto;
 	color: #fff;
 }
-.modal-header h5{
+.modal-header-buy h5{
+	margin-left: 30px;
 	font-family: "Helvetica";
 	font-size: 18px;
 }
-.modal-header h3{
+.modal-header-buy h3{
+	margin-left: 30px;
+	font-size: 24px;
+	font-family: "Helvetica";
+}
+.modal-header-callback{
+	padding: 30px;
+	background-color: #f46464;
+}
+.modal-header-callback > span{
+	color: #fff;
+}
+.modal-header-callback h5{
+	font-family: "Helvetica";
+	font-size: 18px;
+}
+.modal-header-callback h3{
+	margin-left: 28px;
 	font-size: 24px;
 	font-family: "Helvetica";
 }
@@ -1283,8 +1315,8 @@ button:hover, button:active, button:focus{
 }
 .callback{
 	position: fixed;
-	bottom: 10%;
-	left: 93%;
+	bottom: 20px;
+	right: 20px;
 	color: #f46464;
 	width: 60px;
 	height: 60px;
@@ -1319,11 +1351,10 @@ button:hover, button:active, button:focus{
 }
 .options {
 	position: fixed;
-	top: 28%;
-	left: 60%;
-	border: none;
+	bottom: 95px;
+	right: 25px;
 	background-color: #fff;
-	z-index: 9999999;
+	z-index: 999;
 }
 .mat-input-box {
   position: relative;
@@ -1337,7 +1368,6 @@ button:hover, button:active, button:focus{
   padding: 25px 0 0 0;
   position: relative;
 }
-
 .mat-div-box:after, .mat-div-box:before {
   content: "";
   position: absolute;
@@ -1358,6 +1388,8 @@ button:hover, button:active, button:focus{
   width: 165px;
   border: none;
   outline: none;
+  bottom: -10px;
+  left: 5px;
 }
 
 .mat-div-box-date:after, .mat-div-box-date:before {
@@ -1388,7 +1420,7 @@ button:hover, button:active, button:focus{
   width: 70px;
   height: 2px;
   background-color: #c3c4c3; 
-  bottom: 0;
+  bottom: 2px;
 }
 .btn-box-1{
 	margin: 30px;
@@ -1408,7 +1440,7 @@ button:hover, button:active, button:focus{
 	height: 60px;
 	background-color: white;
 	color: #f46464;
-	z-index: 5;
+	z-index: 99999991;
 	position: relative;
 	top: -10px;
 	right: -2px;

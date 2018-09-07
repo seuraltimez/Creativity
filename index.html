@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Galeev</title>
+	<!-- Style -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -11,6 +12,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/slider-project.css">
+	<link rel="stylesheet" href="css/datepicker.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
@@ -18,7 +20,7 @@
 <header class="header">
 	<div class="menu">
 		<nav id="menu" class="navbar navbar-expand-xl navbar">
-		  <a class="navbar-brand" href="#intro"><img src="img/logo.png"></a>
+		  <a class="navbar-brand" href="#intro"><img src="img/logo.png" alt="logo"></a>
 		  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="icon-bar top-bar"></span>
           <span class="icon-bar middle-bar"></span>
@@ -81,10 +83,10 @@
 <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content about-modal-content">
-    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-      </button>
      	<div class="container">
+     		<button type="button" class="close close-about" data-dismiss="modal" aria-label="Close">
+	        	<span aria-hidden="true">&times;</span>
+	    	</button>
      		<div class="row">
      			<div class="col-xl-12 text-about mb-5">
      				<h2><span class="letter">H</span>eading</h2>
@@ -137,10 +139,11 @@
 </div>
 <div id="box" class="options">
 	<div class="modal-content">
-    <div class="modal-header text-center">
-		<span class="mt-3 mb-3">
-			<h3>COLLBACK REQUEST</h3>
-		</span>
+    <div class="modal-header-callback text-center">
+    	<button type="button" class="close close-callback open" data-dismiss="modal" aria-label="Close">
+        	<span aria-hidden="true">&times;</span>
+	    </button>
+		<span class="mt-3 mb-3"><h3>CALLBACK REQUEST</h3></span>
     </div>
     <div class="modal-body">
       <div class="container">
@@ -148,7 +151,7 @@
       <div class="col-xl-12">
       	<div class="mat-div-box">
 			    <label for="name" class="mat-label-box"></label>
-			    <input type="name" class="mat-input-box" id="name" placeholder="Your Name">
+			    <input type="text" class="mat-input-box" id="name" placeholder="Your Name">
 			  </div>
 			    <div class="mat-div-box">
 			    <label for="number" class="mat-label-box"></label>
@@ -159,15 +162,13 @@
 				<div class="row">
   				<div class="col-xs-8 col-sm-8 col-md-8">
   					<div class="mat-div-box-date">
-  						<!-- <p>Selected day</p> -->
-  						<input type="date" name="date" id="date" class="mat-input-box-date">
+  						<input type="text" id="datepicker" class="mat-input-box-date datepicker-here" placeholder="Selected day">
   						<img src="img/calendar.png" alt="">
   					</div>
   				</div>
   				<div class="col-xs-4 col-sm-4 col-md-4">
   					<div class="mat-div-box-time">
-  						<!-- <p>Security time</p> -->
-  						<input type="time" name="password_confirmation" id="password_confirmation" class="mat-input-box-time">
+  						<input type="time" class="mat-input-box-time">
   					</div>
   				</div>
   			</div>
@@ -285,7 +286,7 @@
 			    </div>
 			 </div>
 			 <div class="slider-single">
-			  <img class="slider-single-image" src="img/project_preview_2.png" alt="6"/>
+			  <img class="slider-single-image" src="img/project_preview_1.png" alt="6"/>
 			   <div class="square-1-project">
 			     <h2>Home accountancy-2</h2>
 		    	<p>Short description</p>
@@ -293,7 +294,7 @@
 			   </div>
 			 </div>
 			 <div class="slider-single">
-			  <img class="slider-single-image" src="img/project_preview_3.png" alt="6"/>
+			  <img class="slider-single-image" src="img/project_preview_1.png" alt="6"/>
 			   <div class="square-1-project">
 			   	<h2>Home accountancy-3</h2>
 		    	<p>Short description</p>
@@ -314,30 +315,33 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-12 text-price">
-					<h2><span class="letter">O</span>ur Price</h2>
+				<h2><span class="letter">O</span>ur Price</h2>
 			</div>
 		</div>
 		<div class="row mt-5">
 			<div class="col-xl-3 col-md-6 col-sm-6">
-					  <div class="card-body-price">
-					    <h2 class="card-title mt-5"><b>PERSONAL</b></h2>
-					    <h3 class="h1 font-weight-normal" data-pricing-value="30"><b>12</b><span class="price-span"><b>$</b></span><span class="h6 text-muted ml-2">/month</span></h3>
-					    <p class="text-left description-price">
-					    	<span>1 Project Free</span>
-					    	<span>3 Domain Name</span>
-					    	<span>5 FTP Users</span>
-					    	<span>1 GB Storage</span>
-					    </p>
-					   <div class="mt-5 btn-2">
-							<button class="btn-h" data-toggle="modal" data-target="#ModalBuy-1"><b>BUY NOW</b></button>
-							</div>
-					  </div>
+			  <div class="card-body-price">
+			    <h2 class="card-title mt-5"><b>PERSONAL</b></h2>
+			    <h3 class="h1 font-weight-normal" data-pricing-value="30"><b>12</b><span class="price-span"><b>$</b></span><span class="h6 text-muted ml-2">/month</span></h3>
+			    <p class="text-left description-price">
+			    	<span>1 Project Free</span>
+			    	<span>3 Domain Name</span>
+			    	<span>5 FTP Users</span>
+			    	<span>1 GB Storage</span>
+			    </p>
+			   <div class="mt-5 btn-2">
+					<button class="btn-h" data-toggle="modal" data-target="#ModalBuy-1"><b>BUY NOW</b></button>
+					</div>
+			  </div>
 			</div>
 			<!-- Modal -->
 			<div class="modal fade" id="ModalBuy-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 			  <div class="modal-dialog modal-dialog-centered" role="document">
 			    <div class="modal-content">
-			      <div class="modal-header text-center">
+			      <div class="modal-header-buy text-center">
+			      	   	<button type="button" class="close close-buy" data-dismiss="modal" aria-label="Close">
+        					<span aria-hidden="true">&times;</span>
+	    				</button>
 						<span>
 							<h5>Selected plan</h5>
 							<h3>PERSONAL 12$/month</h3>
@@ -354,55 +358,55 @@
 			        	<div class="row">
 			        		<div class="col-xl-6 col-xs-6 col-sm-6 col-md-6 mt-3">
 			        			<label class="radio"><img src="img/brands/mastercard.png" alt="">
-										  <input type="radio" checked="checked" name="is_company">
-										  <span class="checkround"></span>
-										</label>
-										<label class="radio"><img src="img/brands/visa.png" alt="">
-										  <input type="radio" checked="checked" name="is_company">
-										  <span class="checkround"></span>
-										</label>
+									  <input type="radio" checked="checked" name="is_company">
+									  <span class="checkround"></span>
+									</label>
+									<label class="radio"><img src="img/brands/visa.png" alt="">
+									  <input type="radio" checked="checked" name="is_company">
+									  <span class="checkround"></span>
+									</label>
 			        		</div>
 			        		<div class="col-xl-6 col-xs-6 col-sm-6 col-md-6 mt-3">
 			        			<label class="radio"><img src="img/brands/cirrus.png" alt="">
-										  <input type="radio" checked="checked" name="is_company">
-										  <span class="checkround"></span>
-										</label>
-										<label class="radio"><img src="img/brands/paypal.png" alt="">
-										  <input type="radio" checked="checked" name="is_company">
-										  <span class="checkround"></span>
-										</label>
+									  <input type="radio" checked="checked" name="is_company">
+									  <span class="checkround"></span>
+									</label>
+									<label class="radio"><img src="img/brands/paypal.png" alt="">
+									  <input type="radio" checked="checked" name="is_company">
+									  <span class="checkround"></span>
+									</label>
 			        		</div>
 			        	</div>
 			        <div class="row">
 			        <div class="col-xl-12">
 			        	<div class="mat-div-buy">
-							    <label for="email" class="mat-label-buy"></label>
-							    <input type="email" class="mat-input-buy" id="email" placeholder="Your e-mail adress">
-							  </div>
-							    <div class="mat-div-buy">
-							    <label for="number" class="mat-label-buy"></label>
-							    <input type="number" class="mat-input-buy" id="namber" placeholder="Card Number">
-							  </div>
-							</div>
-							</div>
-								<div class="row">
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="mat-div-buy-expiry">
-			    						<input type="password" name="password" id="password" class="mat-input-buy-expiry" placeholder="Password">
-			    					</div>
-			    				</div>
-			    				<div class="col-xs-6 col-sm-6 col-md-6">
-			    					<div class="mat-div-buy-code">
-			    						<input type="password" name="password_confirmation" id="password_confirmation" class="mat-input-buy-code" placeholder="Security code">
-			    					</div>
-			    				</div>
-			    			</div>
+						    <label for="email" class="mat-label-buy"></label>
+						    <input type="email" class="mat-input-buy" id="email" placeholder="Your e-mail adress">
+						  </div>
+						    <div class="mat-div-buy">
+						    <label for="number" class="mat-label-buy"></label>
+						    <input type="number" class="mat-input-buy" id="namber" placeholder="Card Number">
+						  </div>
+						</div>
+						</div>
+							<div class="row">
+		    				<div class="col-xs-6 col-sm-6 col-md-6">
+		    					<div class="mat-div-buy-expiry">
+		    						<input type="password" name="password" id="password" class="mat-input-buy-expiry" placeholder="Password">
+		    					</div>
+		    				</div>
+		    				<div class="col-xs-6 col-sm-6 col-md-6">
+		    					<div class="mat-div-buy-code">
+		    						<input type="password" name="password_confirmation" id="password_confirmation" class="mat-input-buy-code" placeholder="Security code">
+		    					</div>
+		    				</div>
+		    			</div>
 			      </div>
 			      </div>
 			      <div class="modal-footer">
 			        <div class="btn-buy">
 							<button><b>BUY NOW</b></button>
-							</div>
+					</div>
 			      </div>
 			    </div>
 			  </div>
@@ -427,7 +431,10 @@
 			<div class="modal fade" id="ModalBuy-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 			  <div class="modal-dialog modal-dialog-centered" role="document">
 			    <div class="modal-content">
-			      <div class="modal-header text-center">
+			      <div class="modal-header-buy text-center">
+			      	<button type="button" class="close close-buy" data-dismiss="modal" aria-label="Close">
+        					<span aria-hidden="true">&times;</span>
+	    			</button>
 						<span>
 							<h5>Selected plan</h5>
 							<h3>TEAM 24$/month</h3>
@@ -517,7 +524,10 @@
 			<div class="modal fade" id="ModalBuy-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 			  <div class="modal-dialog modal-dialog-centered" role="document">
 			    <div class="modal-content">
-			      <div class="modal-header text-center">
+			      <div class="modal-header-buy text-center">
+			      	<button type="button" class="close close-buy" data-dismiss="modal" aria-label="Close">
+        					<span aria-hidden="true">&times;</span>
+	    			</button>
 						<span>
 							<h5>Selected plan</h5>
 							<h3>BUSINESS 58$/month</h3>
@@ -534,23 +544,23 @@
 			        	<div class="row">
 			        		<div class="col-xl-6 col-xs-6 col-sm-6 col-md-6 mt-3">
 			        			<label class="radio"><img src="img/brands/mastercard.png" alt="">
-										  <input type="radio" checked="checked" name="is_company">
-										  <span class="checkround"></span>
-										</label>
-										<label class="radio"><img src="img/brands/visa.png" alt="">
-										  <input type="radio" checked="checked" name="is_company">
-										  <span class="checkround"></span>
-										</label>
+									  <input type="radio" checked="checked" name="is_company">
+									  <span class="checkround"></span>
+									</label>
+									<label class="radio"><img src="img/brands/visa.png" alt="">
+									  <input type="radio" checked="checked" name="is_company">
+									  <span class="checkround"></span>
+									</label>
 			        		</div>
 			        		<div class="col-xl-6 col-xs-6 col-sm-6 col-md-6 mt-3">
 			        			<label class="radio"><img src="img/brands/cirrus.png" alt="">
-										  <input type="radio" checked="checked" name="is_company">
-										  <span class="checkround"></span>
-										</label>
-										<label class="radio"><img src="img/brands/paypal.png" alt="">
-										  <input type="radio" checked="checked" name="is_company">
-										  <span class="checkround"></span>
-										</label>
+									  <input type="radio" checked="checked" name="is_company">
+									  <span class="checkround"></span>
+									</label>
+									<label class="radio"><img src="img/brands/paypal.png" alt="">
+									  <input type="radio" checked="checked" name="is_company">
+									  <span class="checkround"></span>
+									</label>
 			        		</div>
 			        	</div>
 			        <div class="row">
@@ -582,32 +592,35 @@
 			      <div class="modal-footer">
 			        <div class="btn-buy">
 							<button><b>BUY NOW</b></button>
-							</div>
+					</div>
 			      </div>
 			    </div>
 			  </div>
 			</div>
 			<!--End Modal -->
 			<div class="col-xl-3 col-md-6 col-sm-6">
-					  <div class="card-body-price">
-					    <h2 class="card-title mt-5"><b>COMPANY</b></h2>
-					    <h3 class="h1 font-weight-normal" data-pricing-value="30"><b>116</b><span class="price-span"><b>$</b></span><span class="h6 text-muted ml-2">/month</span></h3>
-					    <p class="text-left description-price">
-					    	<span>1 Project Free</span>
-					    	<span>3 Domain Name</span>
-					    	<span>5 FTP Users</span>
-					    	<span>1 GB Storage</span>
-					    </p>
-					   <div class="mt-5 btn-2">
-							<button class="btn-h" data-toggle="modal" data-target="#ModalBuy-4"><b>BUY NOW</b></button>
-							</div>
-					  </div>
+			  <div class="card-body-price">
+			    <h2 class="card-title mt-5"><b>COMPANY</b></h2>
+			    <h3 class="h1 font-weight-normal" data-pricing-value="30"><b>116</b><span class="price-span"><b>$</b></span><span class="h6 text-muted ml-2">/month</span></h3>
+			    <p class="text-left description-price">
+			    	<span>1 Project Free</span>
+			    	<span>3 Domain Name</span>
+			    	<span>5 FTP Users</span>
+			    	<span>1 GB Storage</span>
+			    </p>
+			   <div class="mt-5 btn-2">
+					<button class="btn-h" data-toggle="modal" data-target="#ModalBuy-4"><b>BUY NOW</b></button>
+					</div>
+			  </div>
 			</div>
 			<!-- Modal -->
 			<div class="modal fade" id="ModalBuy-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 			  <div class="modal-dialog modal-dialog-centered" role="document">
 			    <div class="modal-content">
-			      <div class="modal-header text-center">
+			      <div class="modal-header-buy text-center">
+			      	<button type="button" class="close close-buy" data-dismiss="modal" aria-label="Close">
+        					<span aria-hidden="true">&times;</span>
+	    				</button>
 						<span>
 							<h5>Selected plan</h5>
 							<h3>COMPANY 116$/month</h3>
@@ -624,23 +637,23 @@
 			        	<div class="row">
 			        		<div class="col-xl-6 col-xs-6 col-sm-6 col-md-6 mt-3">
 			        			<label class="radio"><img src="img/brands/mastercard.png" alt="">
-										  <input type="radio" checked="checked" name="is_company">
-										  <span class="checkround"></span>
-										</label>
-										<label class="radio"><img src="img/brands/visa.png" alt="">
-										  <input type="radio" checked="checked" name="is_company">
-										  <span class="checkround"></span>
-										</label>
-			        		</div>
-			        		<div class="col-xl-6 col-xs-6 col-sm-6 col-md-6 mt-3">
-			        			<label class="radio"><img src="img/brands/cirrus.png" alt="">
-										  <input type="radio" checked="checked" name="is_company">
-										  <span class="checkround"></span>
-										</label>
-										<label class="radio"><img src="img/brands/paypal.png" alt="">
-										  <input type="radio" checked="checked" name="is_company">
-										  <span class="checkround"></span>
-										</label>
+									  <input type="radio" checked="checked" name="is_company">
+									  <span class="checkround"></span>
+									</label>
+									<label class="radio"><img src="img/brands/visa.png" alt="">
+									  <input type="radio" checked="checked" name="is_company">
+									  <span class="checkround"></span>
+									</label>
+		        		</div>
+		        		<div class="col-xl-6 col-xs-6 col-sm-6 col-md-6 mt-3">
+		        			<label class="radio"><img src="img/brands/cirrus.png" alt="">
+									  <input type="radio" checked="checked" name="is_company">
+									  <span class="checkround"></span>
+									</label>
+									<label class="radio"><img src="img/brands/paypal.png" alt="">
+									  <input type="radio" checked="checked" name="is_company">
+									  <span class="checkround"></span>
+									</label>
 			        		</div>
 			        	</div>
 			        <div class="row">
@@ -878,17 +891,27 @@
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/lightzoom.js"></script>
 <script src="js/headhesive.min.js"></script>
+<script src="js/datepicker.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jQuery.scrollSpeed.js"></script>
 <script src="slick/slick.min.js"></script>
 <script src="js/jquery.bxslider.js"></script>
 <script src="js/3d-slider.js"></script>
 <script>
 $('.open').click(function() {
     $('#box').toggle();
+});
+</script>
+<script>
+	$('#datepicker').data('datepicker')
+</script>
+<script>
+	$(function() {  
+    jQuery.scrollSpeed(100, 1000);
 });
 </script>
 </body>
