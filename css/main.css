@@ -1350,9 +1350,10 @@ button:hover, button:active, button:focus{
   display: none;
 }
 .options {
+	border: 2px solid #f46464;
 	position: fixed;
-	bottom: 95px;
-	right: 25px;
+	bottom: 20px;
+	right: 100px;
 	background-color: #fff;
 	z-index: 999;
 }
