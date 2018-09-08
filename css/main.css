@@ -970,6 +970,12 @@ footer h2{
   left: 0;
   transition: all 0.5s;
 }
+@media only screen and (min-width: 480px) and (max-width: 991px),
+only screen and (min-device-width: 480px) and (max-device-width: 991px) {
+	.mat-div:after, .mat-div:before {
+		width: 245px;
+	}
+}
 
 .mat-div::after {
   background-color: #000;
