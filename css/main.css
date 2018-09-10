@@ -996,7 +996,7 @@ only screen and (min-device-width: 480px) and (max-device-width: 991px) {
 }
 /* Hover для кнопки */
 .btn-4{
-	background-color: #f46464;
+	background-color: transparent;
 	width: 267px;
 	height: 56px;
 	font-size: 20px;
@@ -1319,6 +1319,7 @@ button:hover, button:active, button:focus{
   left: 0;
 }
 .callback{
+	background-color: transparent;
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
@@ -1332,8 +1333,6 @@ button:hover, button:active, button:focus{
 }
 .callback button{
 	transition: all 0.3s ease;
-	border: none;
-	background-color: transparent;
 	border: 4px solid #f46464;
 	width: 60px;
 	height: 60px;
@@ -1358,7 +1357,7 @@ button:hover, button:active, button:focus{
 .options {
 	border: 2px solid #f46464;
 	position: fixed;
-	bottom: 20px;
+	bottom: 100px;
 	right: 100px;
 	background-color: #fff;
 	z-index: 999;
