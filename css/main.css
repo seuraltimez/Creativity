@@ -975,6 +975,15 @@ only screen and (min-device-width: 480px) and (max-device-width: 991px) {
 	.mat-div:after, .mat-div:before {
 		width: 245px;
 	}
+	.mat-input{
+		width: 245px;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 991px),
+only screen and (min-device-width: 480px) and (max-device-width: 991px) {
+	.mat-div{
+		width: 245px;
+	}
 }
 
 .mat-div::after {
@@ -991,7 +1000,7 @@ only screen and (min-device-width: 480px) and (max-device-width: 991px) {
 }
 
 .is-completed .mat-label {
-  font-size: 30px;
+  font-size: 19px;
   transform: translateY(0);
 }
 /* Hover для кнопки */
