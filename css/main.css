@@ -935,8 +935,7 @@ footer h2{
 	margin-top: 140px;
 }
 .footer-form{
-	position: relative;
-	right: 4%;
+	margin: 0 auto;
 }
 .mat-label {
   display: block;
@@ -1034,6 +1033,7 @@ button:hover, button:active, button:focus{
 }
 /* Конец hover для кнопки */
 .contact {
+	margin: 0 auto;
 	margin-left: 20%;
 }
 .contact h5, h6 {
@@ -1366,8 +1366,8 @@ button:hover, button:active, button:focus{
 .options {
 	border: 2px solid #f46464;
 	position: fixed;
-	bottom: 100px;
-	right: 100px;
+	bottom: 20px;
+	right: 20px;
 	background-color: #fff;
 	z-index: 999;
 }
