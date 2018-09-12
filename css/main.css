@@ -1379,7 +1379,7 @@ button:hover, button:active, button:focus{
 .options {
 	border: 2px solid #f46464;
 	position: fixed;
-	bottom: 20px;
+	bottom: 80px;
 	right: 20px;
 	background-color: #fff;
 	z-index: 999;
