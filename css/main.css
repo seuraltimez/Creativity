@@ -1,6 +1,7 @@
 *, *:befoe, *:after {
 	-box-sizing: border-box;
 }
+
 body{
 	margin: 0;
 	padding: 0;
@@ -151,14 +152,17 @@ button:hover, button:active, button:focus{
  color: #000;
  cursor: pointer;
 }
-
+.center-block {
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+}
 .box-bg {
-	display: flex;
-	width: 550px;
-	height: 483px;
+	max-width: 550px;
+	height: 483px!important;
 	background: #fff;
 	border: 5px solid #f78b8b;
-	margin: auto;
+	margin: 0 auto;
 }
 .text-intro{
 	color: #000;
@@ -494,6 +498,10 @@ button:hover, button:active, button:focus{
 }
 .square-2-price a{
 	color: #f78b8b;
+}
+.card-body-price{
+	display: grid;
+	justify-content: center;
 }
 .card-body-price h2{
 	color: #f78b8b;
@@ -935,6 +943,8 @@ footer h2{
 	margin-top: 140px;
 }
 .footer-form{
+	display: grid;
+	justify-content: center;
 	margin: 0 auto;
 }
 .mat-label {
@@ -969,8 +979,8 @@ footer h2{
   left: 0;
   transition: all 0.5s;
 }
-@media only screen and (min-width: 480px) and (max-width: 991px),
-only screen and (min-device-width: 480px) and (max-device-width: 991px) {
+@media only screen and (min-width: 480px) and (max-width: 1180px),
+only screen and (min-device-width: 480px) and (max-device-width: 1180px) {
 	.mat-div:after, .mat-div:before {
 		width: 245px;
 	}
@@ -978,8 +988,8 @@ only screen and (min-device-width: 480px) and (max-device-width: 991px) {
 		width: 245px;
 	}
 }
-@media only screen and (min-width: 480px) and (max-width: 991px),
-only screen and (min-device-width: 480px) and (max-device-width: 991px) {
+@media only screen and (min-width: 480px) and (max-width: 1180px),
+only screen and (min-device-width: 480px) and (max-device-width: 1180px) {
 	.mat-div{
 		width: 245px;
 	}
@@ -1033,8 +1043,9 @@ button:hover, button:active, button:focus{
 }
 /* Конец hover для кнопки */
 .contact {
+	display: grid;
+	justify-content: center;
 	margin: 0 auto;
-	margin-left: 20%;
 }
 .contact h5, h6 {
 	font-size: 30px;
